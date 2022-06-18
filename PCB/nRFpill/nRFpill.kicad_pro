@@ -44,7 +44,7 @@
         "silk_text_thickness": 0.19999999999999998,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": false,
+          "45_degree_only": true,
           "min_clearance": 0.265
         }
       },
@@ -383,6 +383,7 @@
         "name": "Power",
         "nets": [
           "+5V",
+          "DCCH",
           "GND",
           "Net-(C2-Pad1)",
           "VBAT",
