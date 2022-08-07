@@ -4651,13 +4651,13 @@
       (reference "SW47") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/6a3b29e3-bf29-482f-a1d2-93578ad1cae1"
-      (reference "SW48") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
+      (reference "SW48") (unit 1) (value "1.25u") (footprint "MX-hotswap:SW-HS-1.25u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/7af54ba7-946a-4c5d-953d-74fac93c234b"
       (reference "SW49") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/167cb0d0-46e8-4220-adcf-307e9a96b80b"
-      (reference "SW50") (unit 1) (value "1.25u") (footprint "MX-hotswap:SW-HS-1.25u")
+      (reference "SW50") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/5810f928-a68b-4c1d-be77-80b1d67e49cb"
       (reference "SW51") (unit 1) (value "1.25u") (footprint "MX-hotswap:SW-HS-1.25u")
@@ -4669,22 +4669,22 @@
       (reference "SW55") (unit 1) (value "1.25u") (footprint "MX-hotswap:SW-HS-1.25u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/7313a50e-e645-4005-9323-cd065a4fa44a"
-      (reference "SW56") (unit 1) (value "2u") (footprint "MX-hotswap:SW-HS-2u")
+      (reference "SW56") (unit 1) (value "2.75u") (footprint "MX-hotswap:SW-HS-2.75u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/6f34e34f-fe85-427e-82c7-7620aa156420"
-      (reference "SW57") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
+      (reference "SW57") (unit 1) (value "2u") (footprint "MX-hotswap:SW-HS-2u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/8a18277f-1979-43ff-842b-2a92993f35e6"
-      (reference "SW58") (unit 1) (value "2.25u") (footprint "MX-hotswap:SW-HS-2.25u")
+      (reference "SW58") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/bc19c4ca-2965-442a-86be-fb596feb9bf5"
-      (reference "SW60") (unit 1) (value "1.25u") (footprint "MX-hotswap:SW-HS-1.25u")
+      (reference "SW60") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/da85a676-86d2-423f-aadf-a0966655c013"
       (reference "SW61") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/9a1e7e81-d1da-4153-8a51-9c7ea0c29155/0c90b23e-d8d0-448b-80f5-8bb5b15ec81e"
-      (reference "SW62") (unit 1) (value "1.25u") (footprint "MX-hotswap:SW-HS-1.25u")
+      (reference "SW62") (unit 1) (value "1u") (footprint "MX-hotswap:SW-HS-1u")
     )
     (path "/3cdb0824-96ae-4e44-b880-719133bcabdf"
       (reference "U1") (unit 1) (value "TP4054") (footprint "Package_TO_SOT_SMD:SOT-23-5_HandSoldering")
