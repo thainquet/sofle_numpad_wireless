@@ -7,6 +7,7 @@
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
+      "images": 0.6,
       "pads": 0.9399999976158142,
       "tracks": 0.9200000166893005,
       "vias": 0.75,
@@ -37,6 +38,7 @@
       9,
       10,
       11,
+      12,
       13,
       14,
       15,
