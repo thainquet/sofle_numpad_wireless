@@ -1,0 +1,10 @@
+file_format: "1"
+id: nrfpill
+name: nRFpill v1
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://github.com/kien242/sofle_numpad_wireless/tree/main/PCB/nRFpill
+exposes: [STM32 Blackpill]

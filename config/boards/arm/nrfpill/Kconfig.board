@@ -1,0 +1,9 @@
+# nRFpill board configuration
+
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+config BOARD_NRFPILL_10
+	bool "nRFpill"
+	depends on SOC_NRF52840_QIAA
+
