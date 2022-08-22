@@ -4043,10 +4043,10 @@
   (symbol (lib_id "Device:C") (at 205.74 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b103f2ec-3c6b-4830-96f7-70d27dea761e)
-    (property "Reference" "C5" (id 0) (at 208.915 110.4899 0)
+    (property "Reference" "C5" (id 0) (at 209.55 110.4899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1uF" (id 1) (at 208.915 113.0299 0)
+    (property "Value" "100nF" (id 1) (at 209.55 113.0299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 206.7052 115.57 0)
@@ -4285,7 +4285,7 @@
     (in_bom yes) (on_board yes)
     (uuid dd10163f-a041-4080-beea-991cfe918582)
     (property "Reference" "R10" (id 0) (at 56.515 179.5272 90))
-    (property "Value" "RPROG" (id 1) (at 56.515 181.8386 90))
+    (property "Value" "2k" (id 1) (at 56.515 181.8386 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 56.515 183.007 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4332,10 +4332,10 @@
   (symbol (lib_id "Device:C_Small") (at 189.865 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e0ff723e-9da4-419a-9b7c-537137a1c661)
-    (property "Reference" "C1" (id 0) (at 193.04 39.3699 0)
+    (property "Reference" "C1" (id 0) (at 193.04 39.3762 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100nF" (id 1) (at 193.04 41.9099 0)
+    (property "Value" "10nF" (id 1) (at 193.04 41.9162 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 189.865 40.64 0)
@@ -4409,7 +4409,7 @@
     (property "Reference" "R6" (id 0) (at 219.202 37.5666 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "2M" (id 1) (at 219.202 39.878 0)
+    (property "Value" "100K" (id 1) (at 219.202 39.878 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 222.758 38.735 90)
@@ -4637,7 +4637,7 @@
       (reference "#PWR0127") (unit 1) (value "GND") (footprint "")
     )
     (path "/e0ff723e-9da4-419a-9b7c-537137a1c661"
-      (reference "C1") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C1") (unit 1) (value "10nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/f420da17-70b9-4289-9973-71af4d270f42"
       (reference "C2") (unit 1) (value "10uF") (footprint "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S")
@@ -4649,7 +4649,7 @@
       (reference "C4") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/b103f2ec-3c6b-4830-96f7-70d27dea761e"
-      (reference "C5") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C5") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/3525d7fb-9fbb-407a-b98f-dbe710a5769f"
       (reference "D1") (unit 1) (value "BLUE") (footprint "LED_SMD:LED_0603_1608Metric")
@@ -4700,7 +4700,7 @@
       (reference "R5") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/ec41bd13-d169-4b04-82e8-82bf8614a606"
-      (reference "R6") (unit 1) (value "2M") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R6") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/c6be61ba-466b-4919-aa01-8bb9fa803922"
       (reference "R7") (unit 1) (value "10M") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -4712,7 +4712,7 @@
       (reference "R9") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/dd10163f-a041-4080-beea-991cfe918582"
-      (reference "R10") (unit 1) (value "RPROG") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R10") (unit 1) (value "2k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/32eae5dc-f362-4450-8ba9-22274608b5ec"
       (reference "R11") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0603_1608Metric")
