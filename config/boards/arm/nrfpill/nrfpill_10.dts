@@ -6,7 +6,7 @@
 
 /dts-v1/;
 #include "nrfpill.dtsi"
-
+#include "stm32_arduino_pins.dtsi"
 / {
 	chosen {
 		zmk,battery = &vbatt;
@@ -20,7 +20,8 @@
 		};
 	};
 
-/*ext-power sẽ cần bản PCB vá*/
+    /*ext-power sẽ cần bản PCB vá*/
+
 	ext-power {
 		compatible = "zmk,ext-power-generic";
 		label = "EXT_POWER";

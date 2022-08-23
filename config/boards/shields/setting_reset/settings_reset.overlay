@@ -16,7 +16,7 @@
 		label = "KSCAN";
 
 		input-gpios
-			= <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
+			= <&stm32_arduino 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
 			;
 	};
 
