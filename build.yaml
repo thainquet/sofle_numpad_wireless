@@ -1,8 +1,8 @@
 include:
   - board: nrfpill_10
     shield: settings_reset
-  - board: nice_nano
+  - board: nrfpill_10
     shield: sofle_numpad_left
-  - board: nice_nano
+  - board: nrfpill_10
     shield: sofle_numpad_right
 
