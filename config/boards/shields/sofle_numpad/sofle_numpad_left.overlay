@@ -6,7 +6,6 @@
  */
 #include "sofle_numpad.dtsi"
 
-	/ {
 		chosen {
 			zephyr,display = &oled;
 		};
@@ -33,7 +32,6 @@
 				, <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 				;
 		};
-	};
 
 &left_encoder {
         a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
