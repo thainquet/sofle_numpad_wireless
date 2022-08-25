@@ -5,11 +5,11 @@
  */
 
 #include "sofle_numpad.dtsi"
-	
-		default_transform: keymap_transform_0 {
-			col-offset = <3>;
-		};
-	
+
+&default_transform {
+	col-offset = <3>;
+};
+
 &kscan0 {
 	col-gpios
 		= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
@@ -32,9 +32,9 @@
         ;
 };
 
-&left_encoder {
-        a-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+&right_encoder {
+        a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         status = "okay";
 };
 
