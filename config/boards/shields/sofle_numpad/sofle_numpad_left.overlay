@@ -2,9 +2,15 @@
  * Copyright (c) 2022 kien242
  *
  * SPDX-License-Identifier: MIT
- * 
  */
+
 #include "sofle_numpad.dtsi"
+<<<<<<< HEADggg
+
+&default_transform {
+	col-offset = <9>;
+};
+=======
 	
 		default_transform: keymap_transform_0 {
 			col-offset = <3>;
@@ -28,10 +34,33 @@
 				, <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 				;
 		};
+>>>>>>> 42af842a330f7bc5e26b2733511ec6d1fb2686b3
+
+&kscan0 {
+	col-gpios
+		= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 25 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 18 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 6  GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 5  GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 4  GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 3  GPIO_ACTIVE_HIGH>
+		;
+
+    row-gpios
+        = <&stm32_arduino 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+};
 
 &left_encoder {
-        a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         status = "okay";
 };
 
