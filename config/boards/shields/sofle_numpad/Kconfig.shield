@@ -6,3 +6,6 @@ config SHIELD_SOFLE_NUMPAD_LEFT
 
 config SHIELD_SOFLE_NUMPAD_RIGHT
 	def_bool $(shields_list_contains,sofle_numpad_right)
+
+config SHIELD_SOFLE_NUMPAD_NUM
+	def_bool $(shields_list_contains,sofle_numpad_num)

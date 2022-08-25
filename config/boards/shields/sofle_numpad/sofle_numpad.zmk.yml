@@ -1,14 +1,15 @@
 file_format: "1"
-id: sofle
-name: Sofle
+id: sofle_numpad
+name: Sofle Numpaf
 type: shield
-url: https://github.com/josefadamcik/SofleKeyboard
-requires: [pro_micro]
+url: https://github.com/kien242/sofle_numpad_wireless
+requires: [pro_micro, nrfpill]
 exposes: [i2c_oled]
 features:
   - keys
   - display
   - encoder
 siblings:
-  - sofle_left
-  - sofle_right
+  - sofle_numpad_left
+  - sofle_numpad_right
+  - sofle_numpad_num

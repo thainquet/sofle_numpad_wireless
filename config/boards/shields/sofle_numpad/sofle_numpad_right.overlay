@@ -7,18 +7,26 @@
 #include "sofle_numpad.dtsi"
 
 &default_transform {
-	col-offset = <6>;
+	col-offset = <9>;
 };
 
 &kscan0 {
 	col-gpios
-		= <&stm32_arduino 5 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 4 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 3 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 2 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 1 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 0 GPIO_ACTIVE_HIGH>
+		= <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 6 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 18 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 25 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
 		;
+
+    row-gpios
+        = <&stm32_arduino 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
 };
 
 &right_encoder {

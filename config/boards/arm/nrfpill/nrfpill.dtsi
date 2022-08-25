@@ -48,14 +48,10 @@
 
 &i2c0 {
 	compatible = "nordic,nrf-twi";
-	sda-pin = <24>;
-	scl-pin = <22>;
 };
 
 &i2c1 {
 	compatible = "nordic,nrf-twi";
-	sda-pin = <21>;
-	scl-pin = <41>;
 };
 
 &uart0 {
