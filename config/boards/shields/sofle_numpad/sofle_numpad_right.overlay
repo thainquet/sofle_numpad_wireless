@@ -11,10 +11,6 @@
 };
 
 &kscan0 {
-	compatible = "zmk,kscan-gpio-matrix";
-	label = "KSCAN";
-	diode-direction = "col2row";
-
 	col-gpios
 		= <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>

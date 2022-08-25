@@ -6,37 +6,34 @@
  */
 #include "sofle_numpad.dtsi"
 
-/ {
-     &default_transform {
-	col-offset = <3>;
+	/ {
+		chosen {
+			zephyr,display = &oled;
+		};
+	
+		default_transform: keymap_transform_0 {
+			col-offset = <3>;
+		};
+	
+		kscan0: kscan_0 {
+			col-gpios
+				= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
+				, <&stm32_arduino 25 GPIO_ACTIVE_HIGH>
+				, <&stm32_arduino 18 GPIO_ACTIVE_HIGH>
+				, <&stm32_arduino 6 GPIO_ACTIVE_HIGH>
+				, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>
+				, <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
+				;
+	
+			row-gpios
+				= <&stm32_arduino 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+				, <&stm32_arduino 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+				, <&stm32_arduino 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+				, <&stm32_arduino 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+				, <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+				;
+		};
 	};
-
-    chosen {
-        zephyr,display = &oled;
-	};
-		
-    &kscan0 {
-		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
-		diode-direction = "col2row";
-	col-gpios
-		= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 25 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 18 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 6 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
-		;
-
-    row-gpios
-        = <&stm32_arduino 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&stm32_arduino 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&stm32_arduino 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&stm32_arduino 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        ;
-    };
-};
 
 &left_encoder {
         a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
