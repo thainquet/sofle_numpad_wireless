@@ -15,7 +15,7 @@
 			col-offset = <3>;
 		};
 	
-		kscan0: kscan_0 {
+		&kscan0 {
 			col-gpios
 				= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
 				, <&stm32_arduino 25 GPIO_ACTIVE_HIGH>
