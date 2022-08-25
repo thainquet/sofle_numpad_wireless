@@ -5,16 +5,14 @@
  * 
  */
 
-#include "sofle_numpad.dtsi"
-
+    / {
 &default_transform {
 	col-offset = <3>;
-
-};
-    chosen {
+	};
+ chosen {
         zephyr,display = &oled;
-		};
-	
+	};
+		
 &kscan0 {
 	col-gpios
 		= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
@@ -33,6 +31,14 @@
         , <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+    };
+
+	
+#include "sofle_numpad.dtsi"
+
+
+	
+
 
 &left_encoder {
         a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
