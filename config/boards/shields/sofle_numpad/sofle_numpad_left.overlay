@@ -5,10 +5,6 @@
  * 
  */
 #include "sofle_numpad.dtsi"
-
-		chosen {
-			zephyr,display = &oled;
-		};
 	
 		default_transform: keymap_transform_0 {
 			col-offset = <3>;
