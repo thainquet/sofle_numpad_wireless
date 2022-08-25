@@ -5,6 +5,6 @@ include:
     shield: sofle_numpad_left
   - board: nrfpill_10
     shield: sofle_numpad_right
-  - board: nrfpill_10
+  - board: nrfmicro_13
     shield: sofle_numpad_num
 
