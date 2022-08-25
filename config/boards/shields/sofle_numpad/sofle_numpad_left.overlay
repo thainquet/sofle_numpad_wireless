@@ -9,6 +9,7 @@
 
 &default_transform {
 	col-offset = <3>;
+
 };
 
 &kscan0 {
@@ -30,6 +31,13 @@
         ;
 };
 
-&left_encoder {
-	status = "okay";
-};
+{
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        label = "LEFT_ENCODER";
+        a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+        status = "okay";
+    };
+}

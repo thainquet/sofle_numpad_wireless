@@ -31,34 +31,16 @@ RC(3,0 ) RC(3,1 ) RC(3,2 )     RC(3,3 ) RC(3,4 ) RC(3,5 ) RC(3,6 ) RC(3,7 ) RC(3
                                                  RC(4,3 ) RC(4,4 ) RC(4,5 ) RC(4,6 ) RC(4,7 )     RC(4,10) RC(4,11) RC(4,12) RC(4,13) RC(4,14)
         >;
     };
+    
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+    };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
-    };
-
-    left_encoder: encoder_left {
-        compatible = "alps,ec11";
-        label = "LEFT_ENCODER";
-        a-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
-        status = "disabled";
-    };
-
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        label = "RIGHT_ENCODER";
-        a-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
-        status = "disabled";
-    };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
     };
 };
 
