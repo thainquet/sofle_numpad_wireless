@@ -18,9 +18,6 @@
 		, <&stm32_arduino 6  GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 5  GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 4  GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 3  GPIO_ACTIVE_HIGH>
 		;
 
     row-gpios
