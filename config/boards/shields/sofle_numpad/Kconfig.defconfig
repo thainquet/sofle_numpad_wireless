@@ -5,13 +5,13 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
-	
+
 endif
 
 if SHIELD_SOFLE_NUMPAD_NUM
 
 config ZMK_KEYBOARD_NAME
-      default "Sofle Numpad"
+      default "Sofle Num Numpad"
 
 endif
 
@@ -19,7 +19,7 @@ endif
 if SHIELD_SOFLE_NUMPAD_RIGHT
 
 config ZMK_KEYBOARD_NAME
-      default "Sofle Numpad Right"
+      default "Sofle Num Right"
 
 endif
 
