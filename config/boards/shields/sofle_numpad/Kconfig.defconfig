@@ -3,9 +3,6 @@ if SHIELD_SOFLE_NUMPAD_LEFT
 config ZMK_KEYBOARD_NAME
 	default "Sofle numpad"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-
 endif
 
 if SHIELD_SOFLE_NUMPAD_NUM
@@ -17,7 +14,8 @@ endif
 
 
 if SHIELD_SOFLE_NUMPAD_RIGHT
-
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
 config ZMK_KEYBOARD_NAME
       default "Sofle Num Right"
 
