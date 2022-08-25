@@ -5,6 +5,9 @@
  */
 
 #include "sofle_numpad.dtsi"
+chosen {
+        zephyr,display = &oled;
+		};
 
 &kscan0 {
 	col-gpios

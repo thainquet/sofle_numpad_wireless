@@ -11,7 +11,10 @@
 	col-offset = <3>;
 
 };
-
+    chosen {
+        zephyr,display = &oled;
+		};
+	
 &kscan0 {
 	col-gpios
 		= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
