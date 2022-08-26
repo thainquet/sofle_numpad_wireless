@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/slicemk
   projects:
     - name: zmk
-      remote: slicemk
-      revision: dongle-pr
+      remote: bezmi
+      revision: multi_peripheral
       import: app/west.yml
   self:
     path: config
