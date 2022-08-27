@@ -12,7 +12,7 @@
 
 &kscan0 {
 	col-gpios
-		= <&stm32_arduino 24 GPIO_ACTIVE_HIGH>
+		= <&stm32_arduino 19 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 25 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 26 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 17 GPIO_ACTIVE_HIGH>

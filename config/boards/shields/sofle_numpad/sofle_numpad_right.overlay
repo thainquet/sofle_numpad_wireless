@@ -33,8 +33,8 @@
 };
 
 &right_encoder {
-        a-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH )>;
-        b-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH )>;
+        a-gpios = <&stm32_arduino 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&stm32_arduino 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         status = "okay";
 };
 
