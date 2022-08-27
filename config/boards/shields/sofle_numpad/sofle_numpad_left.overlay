@@ -14,7 +14,7 @@
 	col-gpios
 		= <&stm32_arduino 19 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 20 GPIO_ACTIVE_HIGH>
-		, <&stm32_arduino 21 GPIO_ACTIVE_HIGH>
+		, <&stm32_arduino 18 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 17 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 28 GPIO_ACTIVE_HIGH>
 		, <&stm32_arduino 29 GPIO_ACTIVE_HIGH>
