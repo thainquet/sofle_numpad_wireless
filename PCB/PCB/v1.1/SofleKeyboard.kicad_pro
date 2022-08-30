@@ -482,6 +482,10 @@
       {
         "netclass": "VCC",
         "pattern": "+5V"
+      },
+      {
+        "netclass": "VCC",
+        "pattern": "+3V3"
       }
     ]
   },
