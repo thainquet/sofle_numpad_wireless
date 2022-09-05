@@ -32,7 +32,7 @@
 
     row-gpios
         = <&stm32_arduino 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&stm32_arduino 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&stm32_arduino 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&stm32_arduino 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&stm32_arduino 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&stm32_arduino 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
