@@ -6,6 +6,12 @@
 
 #include "sofle_numpad.dtsi"
 
+/ {
+	chosen {
+		zmk,underglow = &led_strip;
+	};
+};
+
 &default_transform {
 	col-offset = <0>;
 };
